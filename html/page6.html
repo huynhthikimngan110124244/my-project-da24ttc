@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang = "vi">
+	<head>
+		<title>Thiết kế</title>
+		<meta charset = "utf-8">
+		<link rel = "stylesheet" href = "../css/style6.css">
+	</head>
+	<body>
+        <div class = "product-list" id = "product-list">
+
+        </div>
+        <script>
+            const productItem = document.createElement("div");
+
+            productItem.setAttribute("class", "product-item");
+
+            const productImage = document.createElement("div");
+
+            productImage.setAttribute("class", "product-image");
+
+            const myImage = document.createElement("img");
+
+            myImage.setAttribute("src", "../assets/images/tulip.jpg");
+
+            myImage.setAttribute("alt", "Hạt giống hoa tulip");
+
+            productImage.appendChild(myImage);
+
+            const productInfo = document.createElement("div");
+
+            productInfo.setAttribute("class", "product-info");
+
+            const productName = document.createElement("p");
+
+            const productNameText = document.createTextNode("Hạt giống hoa tulip");
+
+            productName.appendChild(productNameText);
+
+            productInfo.appendChild(productName);
+
+            const productPrice = document.createElement("p");
+
+            const productPriceText = document.createTextNode("150000/bông");
+
+            productPrice.appendChild(productPriceText);
+
+            productInfo.appendChild(productPrice);
+
+            const productLink = document.createElement("a");
+
+            const productLinkText = document.createTextNode("Xem chi tiết");
+
+            productLink.setAttribute("href", "product-detail.html");
+            
+            productLink.appendChild(productLinkText);
+
+            productItem.appendChild(productImage);
+
+            productItem.appendChild(productInfo);
+
+            document.getElementById("product-list").appendChild(productItem);
+
+
+        </script>
+    </body>
+</html>
