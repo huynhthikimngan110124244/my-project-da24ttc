@@ -1,66 +1,32 @@
 <!DOCTYPE html>
-<html lang = "vi">
-	<head>
-		<title>Thiết kế</title>
-		<meta charset = "utf-8">
-		<link rel = "stylesheet" href = "../css/style6.css">
-	</head>
-	<body>
-        <div class = "product-list" id = "product-list">
+<html lang="vi">
 
-        </div>
-        <script>
-            const productItem = document.createElement("div");
+<head>
+    <title>Thiết kế </title>
+    <meta charset="utf-8">
 
-            productItem.setAttribute("class", "product-item");
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-            const productImage = document.createElement("div");
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-            productImage.setAttribute("class", "product-image");
+    <!-- File JS -->
+    <script src="../js/lib6.js"></script>
+</head>
 
-            const myImage = document.createElement("img");
+<body>
 
-            myImage.setAttribute("src", "../assets/images/tulip.jpg");
-
-            myImage.setAttribute("alt", "Hạt giống hoa tulip");
-
-            productImage.appendChild(myImage);
-
-            const productInfo = document.createElement("div");
-
-            productInfo.setAttribute("class", "product-info");
-
-            const productName = document.createElement("p");
-
-            const productNameText = document.createTextNode("Hạt giống hoa tulip");
-
-            productName.appendChild(productNameText);
-
-            productInfo.appendChild(productName);
-
-            const productPrice = document.createElement("p");
-
-            const productPriceText = document.createTextNode("150000/bông");
-
-            productPrice.appendChild(productPriceText);
-
-            productInfo.appendChild(productPrice);
-
-            const productLink = document.createElement("a");
-
-            const productLinkText = document.createTextNode("Xem chi tiết");
-
-            productLink.setAttribute("href", "product-detail.html");
+    <div class="container">
+        <div class="product-list row row-cols-1 row-cols-4 g-4" id="product-list">
             
-            productLink.appendChild(productLinkText);
+        </div>
+    </div>
 
-            productItem.appendChild(productImage);
+    <script>
+        loadProduct(productList);
+    </script>
 
-            productItem.appendChild(productInfo);
+</body>
 
-            document.getElementById("product-list").appendChild(productItem);
-
-
-        </script>
-    </body>
 </html>
