@@ -19,7 +19,7 @@ const productList = [
         id: "03",
         name: "Hoa tulip",
         price: 240,
-        image: "../assets/images/tulip.jpg",
+        image: "../assets/images/tulip1.jpg",
         productLink: "product-detail.html",
         desc: "Hoa Tulip mang một vẻ đẹp vừa đơn giản vừa kiêu sa, là biểu tượng đặc trưng của đất nước Hà Lan xinh đẹp và sự giàu có, thịnh vượng. Hình dáng của hoa tulip giống như một chiếc chén lộn ngược, ôm trọn những gì tinh túy nhất của đất trời vào lòng. Mỗi màu sắc của tulip lại mang một ý nghĩa riêng biệt, nhưng nhìn chung, chúng đều đại diện cho một tình yêu hoàn hảo và sự thanh khiết trong tâm hồn. Cánh hoa mềm mại, mịn màng như lụa kết hợp với phần thân xanh mướt, thẳng tắp tạo nên một phong thái rất quý tộc và lịch lãm. Trong trang trí hiện đại, tulip thường được cắm trong các bình thủy tinh tối giản để tôn lên đường nét thanh thoát của chúng. Loài hoa này đặc biệt ưa thích khí hậu mát mẻ và mang lại cảm giác tươi mới, dịu dàng cho ngôi nhà của bạn. Khi đặt một bình hoa tulip trên bàn làm việc, nó không chỉ giúp giảm bớt căng thẳng mà còn khơi gợi những ý tưởng mới mẻ. Tulip không đơn thuần là một loài hoa, nó là biểu tượng của sự tinh tế và gu thẩm mỹ đẳng cấp của chủ nhân."
     },
