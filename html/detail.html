@@ -47,14 +47,14 @@
     const productId = urlParams.get('id'); // Kết quả: "01" hoặc "02"...
 
     // 3. Tìm sản phẩm trong mảng dựa trên ID vừa lấy được
-    const product = productList.find(item => item.id === productId);
+    const product = productDatabase.find(item => item.id == productId);
 
     // 4. Nếu tìm thấy sản phẩm thì đổ dữ liệu ra HTML
     if (product) {
         document.getElementById('name-detail').innerText = product.name;
         document.getElementById('price-detail').innerText = "Giá: "+product.price+"k/túi";
         document.getElementById('desc-detail').innerText = product.desc;
-        document.getElementById('img-detail').src = product.image;
+        document.getElementById('img-detail').src = product.img;
     } else {
         // Trường hợp ID không tồn tại hoặc không tìm thấy
         document.body.innerHTML = "<div class='container mt-5'><h3>Không tìm thấy sản phẩm này!</h3><a href='../index.html'>Quay lại trang chủ</a></div>";
